@@ -3,10 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Rostislav Nikitin</title>
     <meta name="author" content="Rostislav Nikitin">
+    <meta name="description"
+        content="Rostislav Nikitin's student assignment portal home page for WDD 131 - Dynamic Web Fundamentals at Brigham Young University - Idaho.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
-    <h1>WDD 131 - Rostislav Nikitin</h1>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Rostislav Nikitin</h1>
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://www.linkedin.com/in/nikitin-rostislav/" target="_blank" title="LinkedIn">LinkedIn</a></li>
+                <li><a href="https://byui.instructure.com/" target="_blank" title="I-Learn">I-Learn</a></li> 
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=4#p4" target="_blank" title="Scripture">Scripture</a></li> 
+                <li><a href="#" title="Final Project">Final Project</a></li>             
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="card">
+            <img id="student-photo" src="images/rostislav-nikitin.PNG" alt="Photo of student Rostislav Nikitin, course WDD 131">
+            <h2 class="about-me-heading">About Me</h2>
+            <p class="about-me-paragraph">My name is Rostislav. I was born in Russia, grew up in Czech Republic and 
+                for the last 9 years I have been living and working in the hotel industry in the seaside resort town 
+                called Budva, located in Montenegro. I am interested in web design and enjoy traveling, drawing, 
+                reading scriptures, and spending time with family and friends.
+            </p>
+            <h3 class="country-heading">Montenegro</h3>
+            <figure class="figure">
+                <img src="images/flag-of-montenegro.PNG" alt="Photo of the official flag of Montenegro">
+                <figcaption>Official Flag of Montenegro</figcaption>
+            </figure>
+            <p class="about-country-paragraph">Montenegro is a small country in Southeastern Europe on the Adriatic 
+                coast, known for its picturesque landscapes, including mountains, lakes and beaches. It attracts 
+                tourist with its mild subtropical climate and rich cultural heritage, represented by ancient 
+                cities and Mediterranean cuisine. The friendliness of the locals and safety make Montenegro 
+                an ideal place for recreation and travel.
+            </p>
+        </section>
+        <section class="card">
+                <h2 class="resources-heading">Web Dev Resources</h2>
+                <ul class="resource-links">
+                    <li><a href="https://dev.to/" target="_blank" title="Dev.to Community">Dev.to Community</a></li>
+                    <li><a href="https://css-tricks.com/" target="_blank" title="CSS Tricks">CSS Tricks</a></li> 
+                    <li><a href="https://www.w3schools.com/" target="_blank" title="W3 Schools">W3 Schools</a></li> 
+                    <li><a href="https://www.udemy.com/" target="_blank" title="Udemy">Udemy</a></li>
+                    <li><a href="https://developer.mozilla.org/" target="_blank" title="MDN Web Docs">MDN Web Docs</a></li>    
+                </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Rostislav Nikitin | Montenegro</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>

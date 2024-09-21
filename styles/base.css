@@ -1,0 +1,621 @@
+/* This is the CSS styling for the mobile version */
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+body {
+    background-color: #dde5f2;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Open Sans", system-ui;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 1rem 0.1rem 1rem;
+    margin: 0;
+}
+
+h1, footer p {
+    color: #fdfdfe;
+}
+
+p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #010b13;
+    line-height: 1.5;
+}
+
+h2 {
+    margin: 0;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    text-align: center;
+}
+
+h2, h3 {
+    font-family: "Open Sans", system-ui;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.25rem;
+}
+
+header, footer {
+    background-color: #010b13;
+}
+
+nav {
+    background-color: #fdfdfe;
+    margin: 0 auto;
+}
+
+.navigation {
+    padding: 0;
+}
+
+.navigation li a {
+    display: block;
+    text-decoration: none;
+    color: #010b13;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+p, .navigation li a, footer p {
+    font-size: 0.875rem;
+}
+
+.navigation li a:hover {
+    border: 1px solid #010b13;
+}
+
+.navigation li a:visited {
+    color: #010b13;
+}
+
+.navigation li a, .resource-links li a {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+main {
+    margin: 0 auto;
+}
+
+main section:nth-child(1) {
+    background-color: #fdfdfe;
+}
+
+main section:nth-child(2) {
+    background-color: #010b13;
+}
+
+.about-me-heading {
+    background-color: #010b13;
+    color: #fdfdfe;
+}
+
+.country-heading {
+    color: #010b13;
+    border-bottom: 2px solid #dde5f2; 
+    margin-inline: auto;   
+    width: 80%;
+    text-align: center;
+}
+
+.figure {
+    color: #010b13;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 0.813rem;
+    margin-bottom: 0.625rem;
+}
+
+.about-me-paragraph, .about-country-paragraph {
+    padding: 1rem 1.5rem 1.5rem 1rem;
+    margin: 0;
+}
+
+figcaption {
+    padding-top: 0rem;
+    text-align: center;
+}
+
+.card {
+    border-radius: 30px 30px 0px 0px;
+}
+
+.resources-heading {
+    background-color: #fdfdfe;
+}
+
+.resource-links {
+    padding: 1rem 1.5rem 1.5rem 1.5rem;
+    margin: 0rem 0rem 0rem 0.5rem;
+    color: #fdfdfe;
+    font-size: 0.938rem;
+}
+
+.resource-links li {
+    padding-bottom: 2rem;
+}
+
+.resource-links li a {
+    color: #fdfdfe;
+}
+
+.resource-links li a:hover {
+    font-size: 1rem;
+}
+
+.resources-links li a:visited {
+    color: #dde5f2;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p:nth-child(1) {
+    margin-bottom: 0;
+}
+
+footer p:nth-child(2) {
+    margin-top: 0.125rem;
+}
+
+/* This is the CSS styling for the tablet version */
+@media (min-width: 768px) and (max-width: 1024px) {
+    body {
+        background-color: #dde5f2;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        font-family: "Open Sans", system-ui;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem 1rem 0.1rem 1rem;
+        margin: 0;
+    }
+
+    h1, footer p {
+        color: #fdfdfe;
+    }
+
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 0.875rem;
+        color: #010b13;
+        line-height: 1.5;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+        text-align: center;
+    }
+
+    h2, h3 {
+        font-family: "Open Sans", system-ui;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.25rem;
+    }
+
+    header, footer {
+        background-color: #010b13;
+    }
+
+    nav {
+        background-color: #fdfdfe;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .navigation li {
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        display: block;
+        text-decoration: none;
+        color: #010b13;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .navigation li a, footer p {
+        font-size: 0.813rem;
+    }
+
+    .navigation li a:hover {
+        border: 1px solid #010b13;
+    }
+
+    .navigation li a:visited {
+        color: #010b13;
+    }
+
+    .navigation li a, .resource-links li a {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 16px;
+        max-width: 560px;
+        margin: 20px auto;
+    }
+
+    main section:nth-child(1) {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        background-color: #fdfdfe;
+    }
+
+    main section:nth-child(2) {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        background-color: #010b13;
+    }
+
+    main section:nth-child(1) {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto auto;
+    }
+
+    .about-me-heading {
+        grid-row: 1 / 2;
+        grid-column: 1 / 4;
+        background-color: #010b13;
+        color: #fdfdfe;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .about-me-paragraph {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+        padding-left: 1.5rem;
+    }
+
+    #student-photo {
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+    }
+
+    .country-heading {
+        grid-row: 3 / 4;
+        grid-column: 1 / 4;
+        color: #010b13;
+        border-bottom: 2px solid #dde5f2; 
+        margin-inline: auto;   
+        width: 80%;
+        text-align: center;
+    }
+
+    .figure {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+        color: #010b13;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 0.813rem;
+        margin: 0;
+        padding: 0.3rem 0rem 0rem 1.5rem;
+    }
+
+    .about-country-paragraph {
+        grid-row: 4 / 5;
+        grid-column: 2 / 4;
+        padding: 0rem 1.5rem 1.5rem 1rem;
+        margin: 0;
+    }
+
+    figcaption {
+        padding-top: 0.75rem;
+    }
+
+    .card {
+        border-radius: 30px 30px 10px 10px;
+    }
+
+    .resources-heading {
+        background-color: #fdfdfe;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .resource-links {
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+        margin: 0rem 0rem 0rem 1.0rem;
+        color: #fdfdfe;
+        font-size: 0.938rem;
+    }
+
+    .resource-links li {
+        padding-bottom: 2rem;
+    }
+
+    .resource-links li a {
+        color: #fdfdfe;
+    }
+
+    .resource-links li a:hover {
+        font-size: 1rem;
+    }
+
+    .resources-links li a:visited {
+        color: #dde5f2;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    footer p:nth-child(1) {
+        margin-bottom: 0;
+    }
+
+    footer p:nth-child(2) {
+        margin-top: 0.125rem;
+    }
+}
+
+/* This is the CSS styling for the desktop version */
+@media only screen and (min-width: 1025px) {
+    body {
+        height: 100vh;
+        background-color: #dde5f2;
+        margin: 0;
+        padding: 0;
+    }
+
+    img {
+        margin: 0;
+    }
+
+    h1 {
+        font-family: "Open Sans", system-ui;
+        font-weight: 700;
+        font-style: normal;
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem 1rem 0.1rem 1rem;
+        margin: 0;
+    }
+
+    h1, footer p {
+        color: #fdfdfe;
+    }
+
+    p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 0.875rem;
+        color: #010b13;
+        line-height: 1.5;
+    }
+
+    h2 {
+        margin: 0;
+        padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+        text-align: center;
+    }
+
+    h2, h3 {
+        font-family: "Open Sans", system-ui;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 1.25rem;
+    }
+
+    header, footer {
+        background-color: #010b13;
+    }
+
+    nav {
+        background-color: #fdfdfe;
+        margin: 0 auto;
+    }
+
+    .navigation {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .navigation li {
+        flex: 1 1 100%;
+    }
+
+    .navigation li a {
+        display: block;
+        text-decoration: none;
+        color: #010b13;
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .navigation li a, footer p {
+        font-size: 0.813rem;
+    }
+
+    .navigation li a:hover {
+        border: 1px solid #010b13;
+    }
+
+    .navigation li a:visited {
+        color: #010b13;
+    }
+
+    .navigation li a, .resource-links li a {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    main {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 16px;
+        max-width: 960px;
+        margin: 20px auto;
+    }
+
+    main section:nth-child(1) {
+        grid-row: 1 / 2;
+        grid-column: 1 / 2;
+        background-color: #fdfdfe;
+    }
+
+    main section:nth-child(2) {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        background-color: #010b13;
+    }
+
+    main section:nth-child(1) {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-template-columns: auto auto auto;
+    }
+
+    .about-me-heading {
+        grid-row: 1 / 2;
+        grid-column: 1 / 4;
+        background-color: #010b13;
+        color: #fdfdfe;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .about-me-paragraph {
+        grid-row: 2 / 3;
+        grid-column: 1 / 3;
+        padding-left: 1.5rem;
+    }
+
+    #student-photo {
+        grid-row: 2 / 3;
+        grid-column: 3 / 4;
+    }
+
+    .country-heading {
+        grid-row: 3 / 4;
+        grid-column: 1 / 4;
+        color: #010b13;
+        border-bottom: 2px solid #dde5f2; 
+        margin-inline: auto;   
+        width: 80%;
+        text-align: center;
+    }
+
+    .figure {
+        grid-row: 4 / 5;
+        grid-column: 1 / 2;
+        color: #010b13;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 0.813rem;
+        margin: 0.4rem 0rem 0rem 0rem;
+        padding: 0rem 0rem 0rem 1.5rem;
+    }
+
+    .about-country-paragraph {
+        grid-row: 4 / 5;
+        grid-column: 2 / 4;
+        padding: 0rem 1.5rem 1.5rem 1rem;
+        margin: 0;
+    }
+
+    figcaption {
+        padding-top: 0.75rem;
+    }
+
+    .card {
+        border-radius: 30px 30px 10px 10px;
+    }
+
+    .resources-heading {
+        background-color: #fdfdfe;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .resource-links {
+        padding: 1rem 1.5rem 1.5rem 1.5rem;
+        margin: 0rem 0rem 0rem 1.0rem;
+        color: #fdfdfe;
+        font-size: 0.938rem;
+    }
+
+    .resource-links li {
+        padding-bottom: 2rem;
+    }
+
+    .resource-links li a {
+        color: #fdfdfe;
+    }
+
+    .resource-links li a:hover {
+        font-size: 1rem;
+    }
+
+    .resources-links li a:visited {
+        color: #dde5f2;
+    }
+
+    footer {
+        text-align: center;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    footer p:nth-child(1) {
+        margin-bottom: 0;
+    }
+
+    footer p:nth-child(2) {
+        margin-top: 0.125rem;
+    }
+}
+
+
+
+
+
