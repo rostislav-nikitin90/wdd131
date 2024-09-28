@@ -1,7 +1,6 @@
 /* This is the CSS styling for the tablet version */
 @media (min-width: 768px) and (max-width: 1024px) {
     main {
-        display: grid;
         grid-template-rows: repeat(6, auto);
         grid-template-columns: 1fr 1fr;
         column-gap: 1rem;
@@ -115,7 +114,6 @@
     }
 
     main {
-        display: grid;
         grid-template-rows: repeat(4, auto);
         grid-template-columns: 1fr 1fr 1fr;
         column-gap: 1rem;
