@@ -1,0 +1,250 @@
+/* This is the CSS styling for the mobile version */
+:root {
+    --white: rgba(255, 255, 255, 1);
+    --red: rgba(227, 0, 0, 1);
+    --blue: rgba(0, 113, 188, 1);
+    --green: rgba(39, 124, 50, 1);
+    --yellow: rgba(254, 191, 0, 1);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: "Rubik", sans-serif;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h1, h2, footer p {
+    text-align: center;
+}
+
+h1, h2, ul, footer {
+    color: var(--white);
+}
+
+h1, h2 {
+    font-style: normal;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 2rem;
+    padding: 1.5rem 1rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.625rem;
+    padding: 1.25rem 0rem;
+}
+
+h1, main .montenegro-banner, main .country-data, footer {
+    background-color: var(--red);
+}
+
+header .main-heading-container {
+    padding-bottom: 1rem;
+}
+
+header .main-heading-container, main .section-divider, main .country-weather {
+    background-color: var(--yellow);
+}
+
+main .montenegro-banner {
+    padding-bottom: 0.5rem;
+}
+
+main .country-data-container {
+    background-color: var(--blue);
+}
+
+main .section-divider {
+    padding-top: 0.5rem;
+}
+
+.rain-weather-icon {
+    margin: 0 auto;
+    padding-bottom: 1.25rem;
+    height: 8rem; 
+    width: 8rem;
+}
+
+main .country-weather-container {
+    background-color: var(--green);
+}
+
+.country-data-container, .country-weather-container {
+    padding: 0rem 1rem 1.5rem 1rem;
+}
+
+main section ul {
+    list-style-type: none;
+}
+
+main section ul li {
+    font-size: 1.188rem;
+    padding-bottom: 1rem;
+}
+
+.montenegro-country-data {
+    display: grid;
+    grid-template-rows: repeat(8, auto);
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.625rem;
+}
+
+.montenegro-country-data li:nth-child(1) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.montenegro-country-data li:nth-child(2) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.montenegro-country-data li:nth-child(3) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.montenegro-country-data li:nth-child(4) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.montenegro-country-data li:nth-child(5) {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.montenegro-country-data li:nth-child(6) {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.montenegro-country-data li:nth-child(7) {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+
+.montenegro-country-data li:nth-child(8) {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.montenegro-country-data li:nth-child(9) {
+    grid-row: 5 / 6;
+    grid-column: 1 / 2;
+}
+
+.montenegro-country-data li:nth-child(10) {
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+}
+
+.montenegro-country-data li:nth-child(11) {
+    grid-row: 6 / 7;
+    grid-column: 1 / 2;
+}
+
+.montenegro-country-data li:nth-child(12) {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+}
+
+.montenegro-country-data li:nth-child(13) {
+    grid-row: 7 / 8;
+    grid-column: 1 / 2;
+}
+
+.montenegro-country-data li:nth-child(14) {
+    grid-row: 7 / 8;
+    grid-column: 2 / 3;
+}
+
+.montenegro-country-data li:nth-child(15) {
+    grid-row: 8 / 9;
+    grid-column: 1 / 2;
+}
+
+.montenegro-country-data li:nth-child(16) {
+    grid-row: 8 / 9;
+    grid-column: 2 / 3;
+}
+
+.montenegro-weather-data {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0.625rem;
+}
+
+.montenegro-weather-data li:nth-child(1) {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.montenegro-weather-data li:nth-child(2) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.montenegro-weather-data li:nth-child(3) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+}
+
+.montenegro-weather-data li:nth-child(4) {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.montenegro-weather-data li:nth-child(5) {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+}
+
+.montenegro-weather-data li:nth-child(6) {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.montenegro-weather-data li:nth-child(7) {
+    grid-row: 4 / 5;
+    grid-column: 1 / 2;
+}
+
+.montenegro-weather-data li:nth-child(8) {
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.montenegro-country-data li:nth-child(odd), .montenegro-weather-data li:nth-child(odd) {
+    font-weight: 500;
+    text-align: right;
+}
+
+.montenegro-country-data li:nth-child(even), .montenegro-weather-data li:nth-child(even) {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+footer {
+    padding: 1rem;
+}
+
+footer p:nth-child(2) {
+    margin-top: 0.3rem;
+}
+

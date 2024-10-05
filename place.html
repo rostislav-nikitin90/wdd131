@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montenegro Country Page - WDD 131 - Dynamic Web Fundamentals - Rostislav Nikitin</title>
+    <meta name="description" content="Rostislav Nikitin's student assignment Country page for WDD 131 - Dynamic Web Fundamentals at Brigham Young University - Idaho.">
+    <meta name="author" content="Rostislav Nikitin">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/windchill.js"></script>
+</head>
+<body>
+    <header>
+        <div class="main-heading-container">
+            <h1>Montenegro</h1>
+        </div>
+    </header>
+    <main>
+        <div class="montenegro-banner">
+            <picture>
+                <source media="(min-width: 1025px)" srcset="images/montenegro-large.webp"/>
+                <source media="(min-width: 768px)" srcset="images/montenegro-medium.webp"/>
+                <img src="images/montenegro-small.webp" alt="Montenegro Landscape"/>
+            </picture>
+        </div>
+        <section class="country-data">
+            <div class="country-data-container">
+                <h2 class="country-data-heading">Data</h2>
+                <ul class="montenegro-country-data">
+                    <li>Area:</li>
+                    <li>13,812 sq km</li>
+                    <li>Population:</li>
+                    <li>633,158</li>
+                    <li>Capital:</li>
+                    <li>Podgorica</li>
+                    <li>Language:</li>
+                    <li>Montenegrin</li>
+                    <li>Currency:</li>
+                    <li>Euro</li>
+                    <li>Time Zone:</li>
+                    <li>UTC+1, UTC+2</li>
+                    <li>Calling Code:</li>
+                    <li>+382</li>
+                    <li>Internet TLD:</li>
+                    <li>.me</li>
+                </ul>
+            </div>
+        </section>
+        <div class="section-divider"></div>
+        <section class="country-weather">
+            <div class="country-weather-container">
+                <h2 class="weather-data-heading">Weather</h2>
+                <img class="rain-weather-icon" src="images/rain-weather-icon.svg" alt="Rain Weather Icon" role="img"/>
+                <ul class="montenegro-weather-data">
+                    <li>Temperature:</li>
+                    <li><span id="montenegro-current-temp">23°C</span></li>
+                    <li>Conditions:</li>
+                    <li><span id="montenegro-current-weather-condition-description">Rain</span></li>
+                    <li>Wind:</li>
+                    <li><span id="montenegro-wind-conditions">8 km/h</span></li>
+                    <li>Wind Chill:</li>
+                    <li><span id="montenegro-windchill"></span></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Rostislav Nikitin | Montenegro</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>

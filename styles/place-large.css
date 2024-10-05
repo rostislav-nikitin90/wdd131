@@ -1,0 +1,70 @@
+/* This is the CSS styling for the tablet and desktop version */
+@media (min-width: 768px) {
+    body {
+        height: 100vh;
+    }
+
+    h1 {
+        font-size: 3.25rem;
+        letter-spacing: 2px;
+    }
+
+    h2 {
+        text-align: left;
+    }
+
+    main section ul li {
+        font-size: 1.125rem;
+        padding-bottom: 0.8rem;
+    }
+
+    main {
+        position: relative;
+    }
+
+    main .country-data {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+        background-color: rgba(227, 0, 0, 0);
+    }
+
+    main .country-weather {
+        position: absolute;
+        bottom: 2.5rem;
+        right: 1rem;
+        background-color: rgba(254, 191, 0, 0);
+    }
+
+    main .country-data-container {
+        background-color: rgba(0, 113, 188, 0.7);
+    }
+
+    main .country-weather-container {
+        background-color: rgba(39, 124, 50, 0.7);
+    }
+
+    main .country-data-container, main .country-weather-container {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border-radius: 3px;
+    }
+
+    .section-divider, .rain-weather-icon {
+        display: none;
+    }
+
+    .weather-data-heading::after {
+        content: "🌧️";
+        position: absolute;
+        right: 5rem;
+        top: 1.25rem;
+    }
+    
+    .montenegro-country-data li:nth-child(even), .montenegro-weather-data li:nth-child(even) {
+        font-size: 1.188rem;
+    }
+
+    footer p:nth-child(2) {
+        margin-bottom: 0.5rem;
+    }
+}
