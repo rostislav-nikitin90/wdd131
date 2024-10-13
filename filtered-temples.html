@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album Page - WDD 131 - Dynamic Web Fundamentals - Rostislav Nikitin</title>
+    <meta name="description" content="Rostislav Nikitin's student assignment Temple Album page for WDD 131 - Dynamic Web Fundamentals at Brigham Young University - Idaho.">
+    <meta name="author" content="Rostislav Nikitin">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/filteredtemples.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <div class="button-container">
+            <button id="menu-button" title="Menu"></button>
+        </div>
+        <nav class="navigation">
+            <a href="#" id="allTemples" title="Home">Home</a>
+            <a href="#" id="oldTemples" title="Old Temples">Old</a>
+            <a href="#" id="newTemples" title="New Temples">New</a>
+            <a href="#" id="largeTemples" title="Large Temples">Large</a>
+		    <a href="#" id="smallTemples" title="Small Temples">Small</a>            
+        </nav>
+    </header>
+    <main>
+        <h2 id="pageHeading">Home</h2>
+        <div class="temple-album-container"></div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Rostislav Nikitin | Montenegro</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer> 
+</body>
+</html>
