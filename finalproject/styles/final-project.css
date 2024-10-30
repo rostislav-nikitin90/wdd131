@@ -543,7 +543,7 @@ footer label:hover {
 }
 
 .image-references {
-    width: 780px;
+    width: auto;
     overflow: hidden;
     max-height: 0;
     padding: 0rem;
