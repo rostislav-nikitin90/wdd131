@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website Project - Subscription Confirmation Page - WDD 131 - Dynamic Web Fundamentals - Rostislav Nikitin</title>
+    <meta name="description" content="Rostislav Nikitin's student assignment Subscription Confirmation Page for Final Website Project for WDD 131 - Dynamic Web Fundamentals at Brigham Young University - Idaho.">
+    <meta name="author" content="Rostislav Nikitin">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script defer src="scripts/finalproject.js"></script>
+    <script defer src="scripts/counter.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img class="logo-image" src="images/montexplore-logo.png" alt="Logo Image of Montexplore" loading="lazy"/>
+        </div>
+        <div class="button-container">
+            <button id="menu-button" title="Menu"></button>
+        </div>
+        <nav class="navigation">
+            <a href="https://rostislav-nikitin90.github.io/wdd131/project/home.html" title="Home Page">Home</a>
+            <a href="https://rostislav-nikitin90.github.io/wdd131/project/where-to-go.html" title="Where to Go Page">Where to Go</a>
+            <a href="https://rostislav-nikitin90.github.io/wdd131/project/what-to-see.html" title="What to See">What to See</a>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container">
+            <picture id="form-photo">
+                <source media="(min-width: 768px)" srcset="images/form-image-large.webp"/>
+                <img src="images/form-image-small.webp" alt="Sveti Stefan beach" loading="lazy"/>
+            </picture>
+            <div class="subscription-form bring-front green-bg-color-with-opacity">
+                <div class="form-box">
+                    <p class="confirmation-paragraph">Thank you for your subscription!<span>✅</span></p>
+                    <p class="confirmation-paragraph">Number of successful submissions: <span id="count"></span></p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Rostislav Nikitin | Montenegro</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+</body>

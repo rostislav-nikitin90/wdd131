@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website Project - What to See Page - WDD 131 - Dynamic Web Fundamentals - Rostislav Nikitin</title>
+    <meta name="description" content="Rostislav Nikitin's student assignment What to See Page for Final Website Project for WDD 131 - Dynamic Web Fundamentals at Brigham Young University - Idaho.">
+    <meta name="author" content="Rostislav Nikitin">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script defer src="scripts/finalproject.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img class="logo-image" src="images/montexplore-logo.png" alt="Logo Image of Montexplore" loading="lazy"/>
+        </div>
+        <div class="button-container">
+            <button id="menu-button" class="delayed-element" title="Menu"></button>
+        </div>
+        <nav class="navigation delayed-element">
+            <a href="https://rostislav-nikitin90.github.io/wdd131/project/home.html" title="Home Page">Home</a>
+            <a href="https://rostislav-nikitin90.github.io/wdd131/project/where-to-go.html" title="Where to Go Page">Where to Go</a>
+            <a href="https://rostislav-nikitin90.github.io/wdd131/project/what-to-see.html" title="What to See">What to See</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro-section">
+            <div class="main-heading-box">
+                <h1 class="delayed-element">VISIT TOP 3 SPOTS</h1>
+            </div>
+            <div class="montenegro-banner grid-layout">
+                <picture id="montenegro-destination-photo">
+                    <source media="(min-width: 1025px)" srcset="images/top-destinations-large.webp"/>
+                    <source media="(min-width: 768px)" srcset="images/top-destinations-medium.webp"/>
+                    <img src="images/top-destinations-small.webp" alt="Montenegro Cityscape" loading="lazy"/>
+                </picture>
+                <div class="intro-paragraph-box orange-bg-color delayed-element">
+                    <p>Embark on a journey through Montenegro's finest! Wander through the timeless beauty of 
+                        Kotor, bask in the luxury of Sveti Stefan, and sail into the charm of Perast. Your
+                        adventure awaits!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="top-destinations-section">
+            <div class="top-destinations-container">
+                <div class="kotor-container">
+                    <h2 id="topDestinationsHeading" class="delayed-element">KOTOR</h2>
+                    <picture id="top-destination-photo">
+                        <source media="(min-width: 1025px)" srcset="images/kotor-large.webp"/>
+                        <source media="(min-width: 768px)" srcset="images/kotor-medium.webp"/>
+                        <img src="images/kotor-small.webp" alt="Kotor" loading="lazy"/>
+                    </picture>
+                    <div class="info-box">
+                        <p>Picturesque coastal town, famous for its medieval old town and stunning bay views.</p>
+                    </div>
+                </div>
+                <div class="sveti-stefan-container">
+                    <h2 id="topDestinationsHeading">SVETI STEFAN</h2>
+                    <picture id="top-destination-photo">
+                        <source media="(min-width: 1025px)" srcset="images/sveti-stefan-large.webp"/>
+                        <source media="(min-width: 768px)" srcset="images/sveti-stefan-medium.webp"/>
+                        <img src="images/sveti-stefan-small.webp" alt="Sveti Stefan" loading="lazy"/>
+                    </picture>
+                    <div class="info-box">
+                        <p>Luxury island resort with glamorous stone houses and magnificent sandy beaches.</p>
+                    </div>
+                </div>
+                <div class="perast-container">
+                    <h2 id="topDestinationsHeading">PERAST</h2>
+                    <picture id="top-destination-photo">
+                        <source media="(min-width: 1025px)" srcset="images/perast-large.webp"/>
+                        <source media="(min-width: 768px)" srcset="images/perast-medium.webp"/>
+                        <img src="images/perast-small.webp" alt="Perast" loading="lazy"/>
+                    </picture>
+                    <div class="info-box">
+                        <p>Charming, historic town, known for its beautiful baroque architecture and serene 
+                            waterfront.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Rostislav Nikitin | Montenegro</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+    </footer>
+    
+</body>
+</html>

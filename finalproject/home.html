@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website Project - Home Page - WDD 131 - Dynamic Web Fundamentals - Rostislav Nikitin</title>
+    <meta name="description" content="Rostislav Nikitin's student assignment Home Page for Final Website Project for WDD 131 - Dynamic Web Fundamentals at Brigham Young University - Idaho.">
+    <meta name="author" content="Rostislav Nikitin">
+    <link rel="stylesheet" href="styles/final-project.css">
+    <link rel="stylesheet" href="styles/final-project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script defer src="scripts/finalproject.js"></script>
+    <script defer src="scripts/finalprojecthomepage.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo-box">
+            <img class="logo-image" src="images/montexplore-logo.png" alt="Logo Image of Montexplore" loading="lazy"/>
+        </div>
+        <div class="button-container">
+            <button id="menu-button" class="delayed-element" title="Menu"></button>
+        </div>
+        <nav class="navigation delayed-element">
+            <a href="https://rostislav-nikitin90.github.io/wdd131/finalproject/home.html" title="Home Page">Home</a>
+            <a href="https://rostislav-nikitin90.github.io/wdd131/finalproject/where-to-go.html" title="Where to Go Page">Where to Go</a>
+            <a href="https://rostislav-nikitin90.github.io/wdd131/finalproject/what-to-see.html" title="What to See">What to See</a>
+        </nav>
+    </header>
+    <main>
+        <section class="intro-section">
+            <div class="main-heading-box">
+                <h1 class="delayed-element">DISCOVER MONTENEGRO</h1>
+            </div>
+            <div class="montenegro-banner grid-layout">
+                <picture id="montenegro-destination-photo">
+                    <source media="(min-width: 1025px)" srcset="images/montenegro-large.webp"/>
+                    <source media="(min-width: 768px)" srcset="images/montenegro-medium.webp"/>
+                    <img src="images/montenegro-small.webp" alt="Montenegro Landscape" loading="lazy"/>
+                </picture>
+                <div class="intro-paragraph-box green-bg-color-with-opacity delayed-element">
+                    <p>Montexplore is your excellent guide for travel, culture, and adventure. Visit the 
+                        breathtaking landscapes, events and vibrant cityscapes of Montenegro! Get an incredible
+                        travel experience!
+                    </p>
+                </div>
+            </div>
+        </section>       
+        <section class="event-section delayed-element">
+            <div class="event-heading-box">
+                <h2 id="eventHeading">Upcoming Events</h2>
+            </div>
+            <label for="eventSelection">Filter by event type:</label>
+            <select id="eventSelection" name="eventselection">
+                <option value="All">Show all</option>
+                <option value="Culture">Culture</option>
+                <option value="Music">Music</option>
+                <option value="Sports">Sports</option>
+            </select>
+            <div id="eventContainer"></div>
+        </section>
+        <section class="form-section delayed-element">
+            <h3 id="formHeading">Subscribe to Our Newsletter</h3>
+            <p class="form-paragraph">Stay up to date with the latest travel tips</p>
+            <div class="form-container">
+                <picture id="form-photo">
+                    <source media="(min-width: 768px)" srcset="images/form-image-large.webp"/>
+                    <img src="images/form-image-small.webp" alt="Sveti Stefan beach" loading="lazy"/>
+                </picture>
+                <form class="subscription-form" method="get" action="subscription-confirmation.html">
+                    <div class="form-box">
+                        <label for="name">Your Name*</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Your Email*</label>
+                        <input type="email" placeholder="example@email.com" id="email" name="email" required>
+
+                        <input type="submit" id="submit" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | Rostislav Nikitin | Montenegro</p>
+        <p>Last updated: <span id="lastModified"></span></p>
+        <label for="imageReferencesToogle">Image References</label>
+        <input type="checkbox" id="imageReferencesToogle"/>
+        <ul class="image-references">
+            <li>Images by:</li>
+            <li><a href="https://rostislav-nikitin90.github.io/wdd131/finalproject/images/montexplore-logo.png" target="_blank" title="Image by Rostislav Nikitin">Rostislav Nikitin</a></li>
+            <li><a href="https://pixabay.com/photos/montenegro-sveti-stefan-island-4404726/" target="_blank" title="Image by Marcel">Marcel</a></li>
+            <li><a href="https://www.pexels.com/photo/town-on-foreland-on-sea-shore-16748427/" target="_blank" title="Image by Denis Sllovinja">Denis Sllovinja</a></li>
+            <li><a href="https://www.pexels.com/photo/aerial-view-of-green-trees-beside-body-of-water-10234587/" target="_blank" title="Image by Ana">Ana</a></li>
+            <li><a href="https://www.pexels.com/photo/view-from-the-top-of-the-our-lady-of-the-rocks-church-in-the-bay-of-kotor-montenegro-16059993/" target="_blank" title="Image by Dusan Stupar">Dusan Stupar</a></li>
+            <li><a href="https://www.pexels.com/photo/church-and-a-surrounding-wall-in-kotor-19753330/" target="_blank" title="Image by Fatih Gür">Fatih Gür</a></li>
+            <li><a href="https://www.pexels.com/photo/town-on-coast-of-adriatic-sea-8430905/" target="_blank" title="Image by Mikhail Nilov">Mikhail Nilov</a></li>
+            <li><a href="https://www.pexels.com/photo/aerial-view-of-a-town-9743746/" target="_blank" title="Image by Kate Holovacheva">Kate Holovacheva</a></li>
+            <li><a href="https://www.pexels.com/photo/modern-buildings-and-yachts-on-the-coast-of-the-bay-porto-montenegro-15021810/" target="_blank" title="Image by Aleksandar Andreev">Aleksandar Andreev</a></li>
+            <li><a href="https://www.pexels.com/photo/savina-monastery-beside-green-trees-14422247/" target="_blank" title="Image by Miljan Rašević">Miljan Rašević</a></li>
+            <li><a href="https://www.pexels.com/photo/the-adriatic-sea-somewhere-in-montenegro-15585560/" target="_blank" title="Image by Igor Meghega">Igor Meghega</a></li>
+            <li><a href="https://www.pexels.com/photo/mausoleum-of-negjos-on-top-of-the-lovcen-mountain-peak-14227345/" target="_blank" title="Image by Igor Meghega">Igor Meghega</a></li>
+            <li><a href="https://pixabay.com/photos/skadar-lake-montenegro-journey-469973/" target="_blank" title="Image by елена скорубская">елена скорубская</a></li>
+            <li><a href="https://www.pexels.com/photo/brown-wooden-house-near-green-mountain-under-white-clouds-3768736/" target="_blank" title="Image by Filipa Beroš">Filipa Beroš</a></li>
+            <li><a href="https://unsplash.com/photos/a-small-boat-sitting-on-top-of-a-body-of-water-sILYGefKAUY" target="_blank" title="Image by Milos Lopusina">Milos Lopusina</a></li>
+            <li><a href="https://www.pexels.com/photo/mountain-range-and-a-village-18601480/" target="_blank" title="Image by Jitse Beyens">Jitse Beyens</a></li>
+            <li><a href="https://www.pexels.com/photo/katedrala-svetog-tripuna-cathedral-12199328/" target="_blank" title="Image by Artūras Kokorevas">Artūras Kokorevas</a></li>
+            <li><a href="https://www.pexels.com/photo/white-and-brown-building-near-mountain-11802060/" target="_blank" title="Image by Olga Kobylko">Olga Kobylko</a></li>
+            <li><a href="https://www.pexels.com/photo/aerial-view-of-aman-sveti-stefan-hotel-in-montenegro-8430910/" target="_blank" title="Image by Mikhail Nilov">Mikhail Nilov</a></li>
+            <li><a href="https://www.pexels.com/photo/white-concrete-building-near-body-of-water-13935520/" target="_blank" title="Image by Nik Cvetkovic">Nik Cvetkovic</a></li>
+            <li><a href="https://pixabay.com/photos/kotor-yacht-cruising-outdoors-4372924/" target="_blank" title="Image by Mark Foley">Mark Foley</a></li>
+        </ul>
+    </footer>
+</body>
+</html>

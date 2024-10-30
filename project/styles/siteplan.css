@@ -85,6 +85,8 @@ h3, p, div {
 	font-size: 3.2rem;
 	border: 0;
 	background: none;
+	position: absolute; 
+	bottom: 0; 
 }
 
 #menu-button::before {
