@@ -47,13 +47,14 @@ h1, h2, h3, .navigation a, #destinationBtnTowns, #destinationBtnParks, #submit {
 }
 
 h1 {
-    font-size: 2.875rem;
+    font-size: 1.875rem;
     font-weight: 700;
     letter-spacing: 2px;	
     text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+    line-height: 1.4;
+    padding: 1rem 1rem 0rem;
 }
-
-h1, 
+ 
 #eventContainer section p:nth-of-type(4),
 .confirmation-paragraph:nth-last-of-type(2) {
     padding-top: 1rem;
@@ -99,7 +100,7 @@ h3, #topDestinationsHeading {
     font-size: 1.5rem;
 }
 
-h1, p {
+p {
     line-height: 1.6;
 }
 
