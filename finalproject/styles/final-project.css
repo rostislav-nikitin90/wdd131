@@ -395,10 +395,6 @@ footer  {
     padding-bottom: 2.2rem;
 }
 
-.intro-paragraph-box p, #destinationsContainer section p {
-    text-align: justify;
-}
-
 .green-bg-color-with-opacity {
     background-color: rgba(51, 132, 51, 0.7);
 }
